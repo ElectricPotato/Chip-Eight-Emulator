@@ -105,6 +105,10 @@ void cycle(void){
         getchar();
 
         PC += 2;
+    }else{
+        fprintf(stderr, "unsupported instruction %x at %x\n", instr, PC);
+        getchar();
+        PC += 2;
     }
 
     debug_print("\n");

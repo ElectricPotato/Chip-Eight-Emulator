@@ -1,5 +1,6 @@
 //https://itecnote.com/tecnote/r-define-macro-for-debug-printing-in-c/
 
+#define DEBUG 1
 
 #define debug_print(...) \
     do{ if(DEBUG){ \
